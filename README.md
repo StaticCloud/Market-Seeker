@@ -37,3 +37,6 @@ Markets can be queried using tailored-keywords that correspond to different user
 |-- main.tsx # Entry point for app
 |-- vite-env.ts # Metadata for vite
 ```
+
+## Live Website
+[Visit the application on Netlify](https://market-seeker.netlify.app/)
