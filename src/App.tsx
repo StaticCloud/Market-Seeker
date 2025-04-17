@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Dropdown from "./components/Dropdown";
 import Content from "./components/Content";
-import keywords from "./data/Keywords";
+import { keywords } from "./data/Keywords";
 
 function App() {
   const [keyword, setKeyword] = useState<string>("");

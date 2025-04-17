@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap');
 
 :root {
-  --color-background: #313131;
+  --color-background: #1b1b1b;
+  --color-background-hover: #141414;
   --color-text: #dbdbdb;
-  --color-underline: #3968be;
+  --color-trim: #e4644e;
 }
 
 * {
@@ -12,29 +13,71 @@
   padding: 0;
 }
 
+#root {
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100vw;
+  max-width: 680px;
+  height: 100vh;
+}
+
 body {
   background-color: var(--color-background);
 }
 
 p, h1, h2, h3, h4, h5, h6, select, option {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
+  font-family: "Lora", serif;
+  font-weight: 400;
   font-style: normal;
   color: var(--color-text);
 }
 
-select, option {
-  font-size: 1.5rem;
-}
-
 select {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+
+  align-self: center;
   background-color: var(--color-background);
   border: none;
 
-  border-bottom: 3px solid var(--color-underline);
+  border-bottom: 3px solid var(--color-trim);
+  transition: all .2s;
+}
+
+select:hover {
+  background-color: var(--color-background-hover);
+}
+
+select, option {
+  font-size: 1.2rem;
 }
 
 option {
   border: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 88px);
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.marketWrapper {
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-trim);
+}
+
+.marketNumber {
+  color: var(--color-trim);
+}
+
+.appTitle {
+  padding-bottom: 1rem;
+  color: var(--color-trim);
 }

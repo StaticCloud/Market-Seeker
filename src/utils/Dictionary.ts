@@ -1,64 +1,82 @@
-import keywords from "../data/Keywords";
+import { 
+    acceleratorPrivate,
+    foreignBonds,
+    bootstrappedHomeEquity,
+    commercialBankingEquipmentLoan,
+    cryptocurrency,
+    accountsReceivableLoans,
+    invoiceFactoring,
+    ebsImmigration,
+    corporateGrants,
+    publicHedgeFunds,
+    privateHedgeFunds,
+    brokerDealerRepresentation,
+    bridgeFinancing,
+    regulationA,
+    regulationCFTitleIII,
+    sba7A,
+    tokenization
+ } from "../data/Keywords";
 import markets from "../data/Markets";
 import MarketType from "../types/MarketType";
 
 const dictionary = new Map<string, MarketType>();
 
-function Populate(start: number, end: number, market: number): void {
-    for (let i: number = start; i < end + 1; i++) {
-        dictionary.set(keywords[i], markets[market - 1]);
+function Populate(marketKeywords: string[], marketId: number): void {
+    for (let i = 0; i < marketKeywords.length; i++) {
+        dictionary.set(marketKeywords[i], markets[marketId - 1]);
     }
 }
 
 // 1. Accelerator - Private (925)
-Populate(0, 12, 1)
+Populate(acceleratorPrivate, 1)
 
 // 2. Bonds - Foreign
-Populate(13, 15, 2);
+Populate(foreignBonds, 2);
 
 // 3. Bootstrapped - Home Equity
-Populate(14, 30, 3)
+Populate(bootstrappedHomeEquity, 3)
 
 // 4. Commercial Banking - Equipment Loan
-Populate(31, 44, 4)
+Populate(commercialBankingEquipmentLoan, 4)
 
 // 5. Cryptocurrency - Investment via Crypto Wallet
-Populate(45, 60, 5)
+Populate(cryptocurrency, 5)
 
 // 6. Factoring - Accounts Receivable Loans
-Populate(61, 69, 6)
+Populate(accountsReceivableLoans, 6)
 
 // 7. Factoring – Invoice Factoring
-Populate(70, 78, 7)
+Populate(invoiceFactoring, 7)
 
 // 8. Government Incentives - EB5 Immigration
-Populate(79, 90, 8)
+Populate(ebsImmigration, 8)
 
 // 9. Grants - Corporate Grants
-Populate(91, 103, 9)
+Populate(corporateGrants, 9)
 
 // 10. Hedge Funds – Private
-Populate(104, 115, 10)
+Populate(privateHedgeFunds, 10)
 
 // 11. Hedge Funds – Public
-Populate(116, 128, 11)
+Populate(publicHedgeFunds, 11)
 
 // 12. Investment Banking - Broker Dealer Representation
-Populate(129, 139, 12)
+Populate(brokerDealerRepresentation, 12)
 
 // 13. Private Debt - Bridge Financing
-Populate(140, 150, 13)
+Populate(bridgeFinancing, 13)
 
 // 14. Private Equity Securities - Regulation A
-Populate(151, 154, 14)
+Populate(regulationA, 14)
 
 // 15. Private Equity Securities - Regulation CF Title III
-Populate(155, 163, 15)
+Populate(regulationCFTitleIII, 15)
 
 // 16. Small Business Administration (SBA) – SBA 7A
-Populate(164, 173, 16)
+Populate(sba7A, 16)
 
 // 17. Tokenization
-Populate(174, 189, 17)
+Populate(tokenization, 17)
 
 export default dictionary;

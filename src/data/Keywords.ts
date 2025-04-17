@@ -1,4 +1,4 @@
-const keywords: string[] = [
+const acceleratorPrivate: string[] = [
     "Private Accelerator", // 0
     "Early-Stage Company", // 1
     "Seeking Equity Capital", // 2
@@ -12,9 +12,15 @@ const keywords: string[] = [
     "Giving Up Equity Too Early", // 10
     "Misalignment", // 11
     "Intense Competition", // 12
+]
+
+const foreignBonds: string[] = [
     "Foreign Bonds", // 13
     "International Markets", // 14
     "Borrow Funds in Other Countries", // 15
+]
+
+const bootstrappedHomeEquity = [
     "Bootstrap", // 16
     "Home Equity", // 17
     "Founder", // 18
@@ -30,6 +36,9 @@ const keywords: string[] = [
     "Capital Sourcing", // 28
     "Entrepreneur", // 29,
     "Foreclosure", // 30
+]
+
+const commercialBankingEquipmentLoan: string[] = [
     "Commercial Banking", // 31
     "Finance New Equipment", // 32
     "Finance Used Equipment", // 33
@@ -44,6 +53,9 @@ const keywords: string[] = [
     "Poor Credit", // 42
     "High Interest Rate Possibility", // 43
     "Loan Defaulting", // 44
+]
+
+const cryptocurrency: string[] = [
     "Cryptocurrency", // 45
     "Crypto Wallet", // 46
     "Tokenized Assets", // 47
@@ -60,6 +72,9 @@ const keywords: string[] = [
     "Hacking", // 58
     "Phishing", // 59
     "Limited Regulatory Protection", // 60
+]
+
+const accountsReceivableLoans: string[] = [
     "Accounts Receivable Loans", // 61
     "AR", // 62
     "Fast Access to 70% to 80% of Outstanding Invoice Amounts", // 63
@@ -69,6 +84,9 @@ const keywords: string[] = [
     "Immediate Cash Flow", // 67
     "CAGR", // 68
     "B2B", // 69
+]
+
+const invoiceFactoring: string[] = [
     "Invoice Factoring", // 70
     "Immediate Access", // 71
     "Sell Unpaid Invoices", // 72
@@ -78,6 +96,9 @@ const keywords: string[] = [
     "Delayed Receivables", // 76
     "Healthy Cashflow", // 77
     "70-90% Advance", // 78
+]
+
+const ebsImmigration: string[] = [
     "Government Incentives", // 79
     "EB-5 Immigration", // 80
     "Foreign Investors", // 81
@@ -90,6 +111,9 @@ const keywords: string[] = [
     "Potential Loss of Capital", // 88
     "No Guarantee of Returns", // 89
     "No Guarantee of Job Creation", // 90
+]
+
+const corporateGrants: string[] = [
     "Corporate Grants", // 91
     "Non-Dilutive Funding", // 92
     "Support Research", // 93
@@ -103,6 +127,9 @@ const keywords: string[] = [
     "High Competition", // 101
     "Eligibility Limitations", // 102
     "Extensive Reporting Requirements", // 103
+]
+
+const privateHedgeFunds: string[] = [
     "Private Hedge Funds", // 104
     "For Accredited Investors", // 105
     "For Accredited Institutions", // 106
@@ -115,6 +142,9 @@ const keywords: string[] = [
     "Significant Returns", // 113
     "Wealth Accumulation", // 114
     "Capital Preservation", // 115
+]
+
+const publicHedgeFunds: string[] = [
     "Public Hedge Funds", // 116
     "From Accredited Investors", // 117
     "From Accredited Institutions", // 118
@@ -128,6 +158,9 @@ const keywords: string[] = [
     "Investment Diversification", // 126
     "Pool of Investors", // 127
     "Investment Banking", // 128
+]
+
+const brokerDealerRepresentation: string[] = [
     "Broker Deal Representation", // 129
     "Experienced Intermediaries", // 130
     "Facilitate Buying and Selling", // 131
@@ -139,6 +172,9 @@ const keywords: string[] = [
     "Private Debt", // 137
     "Fees that Reduce Raised Capital", // 138
     "Reliance on Third Parties", // 139
+]
+
+const bridgeFinancing: string[] = [
     "Bridge Financing", // 140
     "Short Term Solutions", // 141
     "Await Larger Funding Round", // 142
@@ -150,10 +186,16 @@ const keywords: string[] = [
     "Equity Dilution", // 148
     "Clear Path to Future Funding", // 149
     "Clear Path to Revenue", // 150
+]
+
+const regulationA: string[] = [
     "Regulation A", // 151
     "Reg A+", // 152
     "Raise $5 Million to $75 Million in Capital", // 153
     "Sell Privately-Held Companies", // 154
+]
+
+const regulationCFTitleIII: string[] = [
     "Regulation CF Title III", // 155
     "Fund Privately-Held Companies", // 156
     "Crowdfunding", // 157
@@ -163,6 +205,9 @@ const keywords: string[] = [
     "Complex Disclosure Agreements", // 161
     "Annual Reporting Obligations", // 162
     "Investment Limits", // 163
+]
+
+const sba7A: string[] = [
     "Small Business Administration", // 164
     "Smaller Business", // 165
     "SBA 7(a)", // 166
@@ -173,6 +218,9 @@ const keywords: string[] = [
     "Flexible Terms", // 171
     "Competitive Interest Rates", // 172
     "Government-Backed Guarantees", // 173 
+]
+
+const tokenization: string[] = [
     "Tokenization", // 174
     "Improve Asset Liquidity", // 175
     "Converting Real-World Assets", // 176
@@ -184,11 +232,49 @@ const keywords: string[] = [
     "Investor Accessibility", // 182 
     "Fractional Ownership", // 183
     "Secure Token Offerings", // 184
-    "STOs", // 185
-    "Democratized Access", // 186
-    "Regulatory Uncertainty", // 187
-    "Platform Security Vulnerabilities", // 188
-    "Lower Secondary Market Activity" // 189
+    "Democratized Access", // 185
+    "Regulatory Uncertainty", // 186
+    "Platform Security Vulnerabilities", // 187
+    "Lower Secondary Market Activity" // 188
+]
+
+const keywords: string[] = [
+    ...acceleratorPrivate,
+    ...foreignBonds,
+    ...bootstrappedHomeEquity,
+    ...commercialBankingEquipmentLoan,
+    ...cryptocurrency,
+    ...accountsReceivableLoans,
+    ...invoiceFactoring,
+    ...ebsImmigration,
+    ...corporateGrants,
+    ...privateHedgeFunds,
+    ...publicHedgeFunds,
+    ...brokerDealerRepresentation,
+    ...bridgeFinancing,
+    ...regulationA,
+    ...regulationCFTitleIII,
+    ...sba7A,
+    ...tokenization
 ];
 
-export default keywords;
+export {
+    keywords,
+    acceleratorPrivate,
+    foreignBonds,
+    bootstrappedHomeEquity,
+    commercialBankingEquipmentLoan,
+    cryptocurrency,
+    accountsReceivableLoans,
+    invoiceFactoring,
+    ebsImmigration,
+    corporateGrants,
+    privateHedgeFunds,
+    publicHedgeFunds,
+    brokerDealerRepresentation,
+    bridgeFinancing,
+    regulationA,
+    regulationCFTitleIII,
+    sba7A,
+    tokenization
+};
